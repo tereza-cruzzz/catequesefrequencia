@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Frequência - Crisma</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+
+        <h1>🔥 Controle de Frequência</h1>
+
+        <div class="simbolo">
+            🔥 🕊️ 🔥
+        </div>
+
+        <p>Turma de Crisma</p>
+
+    </header>
+
+    <section class="dashboard">
+
+        <div class="card">
+            <h2 id="totalCatequizandos">0</h2>
+            <p>Catequizandos</p>
+        </div>
+
+        <div class="card">
+            <h2 id="totalPresencas">0</h2>
+            <p>Presenças</p>
+        </div>
+
+        <div class="card">
+            <h2 id="totalFaltas">0</h2>
+            <p>Faltas</p>
+        </div>
+
+        <div class="card">
+            <h2 id="frequenciaMedia">0%</h2>
+            <p>Frequência Média</p>
+        </div>
+
+    </section>
+
+    <section class="formulario">
+
+        <input
+            type="text"
+            id="nome"
+            placeholder="Nome do catequizando">
+
+        <button onclick="adicionarCatequizando()">
+            Adicionar
+        </button>
+
+    </section>
+
+    <input
+        type="text"
+        id="pesquisa"
+        placeholder="🔍 Pesquisar catequizando">
+
+    <section class="lista">
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Nome</th>
+                    <th>Pres.</th>
+                    <th>Falt.</th>
+                    <th>Freq.</th>
+                    <th>Ações</th>
+                </tr>
+
+            </thead>
+
+            <tbody id="listaCatequizandos">
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
